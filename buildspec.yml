@@ -7,7 +7,6 @@ phases:
       java: corretto8
     commands:
       - echo Entered the install phase...
-      - apt-get update -y
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
