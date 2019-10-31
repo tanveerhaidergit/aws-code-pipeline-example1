@@ -3,6 +3,8 @@
 version: 0.2
 phases:
   pre_build:
+    runtime-versions:
+      java: corretto8
     commands:
     - echo "Entered the pre-build phase"
   build:
