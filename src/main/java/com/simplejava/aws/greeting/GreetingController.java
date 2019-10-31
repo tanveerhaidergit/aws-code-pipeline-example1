@@ -16,7 +16,7 @@ public class GreetingController {
 	
 	@GetMapping(path="",produces="application/json")
 	public ResponseEntity<Greeting> sayGreeting(){
-		Greeting greeting = new Greeting(generateRandom(), "Hello World", LocalDateTime.now(),getHostName(),
+		Greeting greeting = new Greeting(generateRandom(), "Hello World on Elastic Bean stalk", LocalDateTime.now(),getHostName(),
 				getIP());
 		return new ResponseEntity<Greeting>(greeting,HttpStatus.OK);
 		
